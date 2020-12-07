@@ -19,10 +19,13 @@ func (c *Calculator) next() {
 		c.number1 = c.results
 		c.operator = z
 		fmt.Println("请输入一个数字，按回车确认")
+		c.number2 = 0
 		fmt.Scan(&c.number2)
 		c.verify_num()
 		c.result()
 	} else if z == "c" {
+		c.number1 = 0
+		c.number2 = 0
 		c.Start()
 	} else {
 		fmt.Print("感谢您的使用！！！")
