@@ -11,6 +11,15 @@ type Calculator struct {
 	operator string
 }
 
+func (c *Calculator) Desc() string {
+	fmt.Println("----------------------+----------------------")
+	fmt.Println("||    计算器功能      |         01         ||")
+
+	return "01"
+	// fmt.Println("----------------------+----------------------")
+	// fmt.Println("||    信息查询功能    |         02         ||")
+}
+
 func (c *Calculator) next() {
 	fmt.Println("输入运算符继续计算，输入 c 重新计算， 输入其他字符结束")
 	var z string
