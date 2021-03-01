@@ -1,9 +1,10 @@
 package main
 
 import (
-	common "fangwenju/study/common"
+	// common "fangwenju/study/common"
+	socket "fangwenju/study/socket"
 )
 
 func main() {
-	common.Welcome()
+	socket.Link()
 }

@@ -34,13 +34,10 @@ func (b *Boot) Project_list() {
 	// 	reflect.ValueOf(1.1), reflect.ValueOf(2.2), reflect.ValueOf(3.0), reflect.ValueOf("+"),
 	// }
 
-	valueOper := reflect.ValueOf(list[num]) // reflect.value
+	aa := reflect.ValueOf(list[num]) // reflect.value
 	// aa := reflect.Zero(valueOper)           // reflect.value
 
-	arrValueOper := valueOper.Elem()
-	fmt.Printf("type2:%T \n", valueOper)
-	fmt.Printf("type2:%T \n", arrValueOper)
-	// fmt.Printf("type2:%T \n", aa)
+	fmt.Printf("type2:%T \n", aa)
 
 	// v := valueOper.Interface().(calculator.Calculator)
 	// fmt.Println("valueOper.Call", v)
